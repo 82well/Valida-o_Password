@@ -57,6 +57,40 @@
             const number = new RegExp('(?=.*[0-9])');
             const special = new RegExp('(?=.*[!@#\$%\^&\*])');
             const length = new RegExp('(?=.{8,})');
+
+            //If's para validação de cada requisito  
+
+            //Validação de letra minúsculo
+            if (lower.test(data)) {
+                lowerCase.classList.add('valid');
+            } else {
+                lowerCase.classList.remove('valid');
+            }
+            //Validação de letra maiúscula
+            if (upper.test(data)) {
+                upperCase.classList.add('valid');
+            } else {
+                upperCase.classList.remove('valid');
+            }
+            //Validação de número
+            if (number.test(data)) {
+                digit.classList.add('valid');
+            } else {
+                digit.classList.remove('valid');
+            }
+            //Validação de caracter especial
+            if (special.test(data)) {
+                specialChar.classList.add('valid');
+            } else {
+                specialChar.classList.remove('valid');
+            }
+            //Validação de quantidade minima de password
+            if (length.test(data)) {
+                minLength.classList.add('valid');
+            } else {
+                minLength.classList.remove('valid');
+            }
+        }
     </script>
 
 </body>
