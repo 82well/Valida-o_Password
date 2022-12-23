@@ -38,8 +38,8 @@ Uma expressão regular (regular expression ou Regex) é uma sequência de caract
 
 O método toggle() é usado para verificar a visibilidade dos elementos selecionados para alternar entre ocultar() e mostrar() para os elementos selecionados.
 
-<p>show() é executado quando o elemento está oculto.</p>
-<p>hide() é executado quando o elemento está visível.</p>
+<p align="center">show() é executado quando o elemento está oculto.</p>
+<p align="center">hide() é executado quando o elemento está visível.</p>
 
 
 </p>
