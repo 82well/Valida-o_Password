@@ -63,3 +63,43 @@ body {
     position: absolute;
     font-family: fontAwesome;
 }
+
+.validation {
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 30px;
+    background: #376488;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.validation ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.validation ul li {
+    position: relative;
+    list-style: none;
+    color: #fff;
+    font-size: 0.85em;
+    transition: 0.5s;
+}
+
+.validation ul li.valid {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.validation ul li::before {
+    content: '\f192';
+    font-family: fontAwesome;
+    width: 20px;
+    display: inline-flex;
+}
+
+.validation ul li.valid::before {
+    content: '\f00c';
+    color: #0f0;
+}
